@@ -2,7 +2,7 @@
 numRows = int(input("Enter number of rows: "))
 
 
-def printPascal(numRows):
+def pascal_triangle(numRows):
     if (numRows < 1):
         return []
     if (numRows == 1):
