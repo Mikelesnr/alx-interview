@@ -1,16 +1,21 @@
 #!/usr/bin/python3
-numRows = int(input("Enter number of rows: "))
+"""
+0. Pascal's Triangle
+"""
 
 
-def pascal_triangle(numRows):
-    if (numRows < 1):
+def pascal_triangle(n):
+    """Create a function def pascal_triangle(n): that returns a list of lists
+    of integers representing the Pascal’s triangle of n
+    """
+    if (n < 1):
         return []
-    if (numRows == 1):
+    if (n == 1):
         return [[1]]
 
     triangle = [[1]]
 
-    for i in range(1, numRows):
+    for i in range(1, n):
         prevRow = triangle[i-1]
         currRow = []
 
@@ -23,7 +28,4 @@ def pascal_triangle(numRows):
 
         triangle.append(currRow)
 
-    print(triangle)
-
-
-printPascal(numRows)
+    return triangle
