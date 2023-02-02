@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-""" Lockbox challenge """
+#!/usr/bin/python3
+"""lock boxes puzzle solution"""
 
 
 def look_next_opened_box(opened_boxes):
